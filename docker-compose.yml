@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+
+  db:
+    image: mysql:8.0.26
+    container_name: wp-index-shop
+    restart: always
+    volumes: 
+      - db_data:/var/lib/mysql
+      - ./backups:/backups
+    environment: 
+      MYSQL_DATABASE: wp_index_shop
+      MYSQL_USER: index_shop_user
+      MYSQL_PASSWORD: HsV};aI3jp@=
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+      MYSQL_ROOT_PASSWORD: r)mj6xVid*=e
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wp-index-shop-wp
+    restart: always
+    depends_on: ['db']
+    ports: ['80:80']
+    links: ['db:db']
+    volumes: 
+      - './wp-data:/var/www/html'
+    environment: 
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wp_index_shop
+      WORDPRESS_DB_USER: index_shop_user
+      WORDPRESS_DB_PASSWORD: HsV};aI3jp@=
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: wp-index-shop-phpmyadmin
+    restart: always
+    depends_on: ['db']
+    ports: ['12000:80']
+    links: ['db:db']
+    environment: 
+      PMA_HOST: db
+      PMA_USER: index_shop_user
+      PMA_PASSWORD: HsV};aI3jp@=
+
+
+volumes: 
+  db_data: {}
