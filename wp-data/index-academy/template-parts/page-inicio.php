@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-
-<div class="content">
-    <div class="wrap">
         <h2>Academy</h2>
 
         <div class="box-liste-posts">
@@ -28,7 +25,5 @@
                 wp_reset_postdata();
             ?>    
         </div>
-    </div>
-</div>
 
 <?php get_footer(); ?>
