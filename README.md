@@ -63,7 +63,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Autor
 ---
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="https://github.com/CharleyKevin">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/41459674?s=400&u=2d5d347462344dfede260389a750307de776d582&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Charley Kevin</b></sub></a> <a href="https://github.com/CharleyKevin" title="Charley"></a>
