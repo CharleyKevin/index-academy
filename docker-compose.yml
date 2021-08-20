@@ -24,7 +24,7 @@ services:
     ports: ['80:80']
     links: ['db:db']
     volumes: 
-      - './wp-data:/var/www/html'
+      - './wp-data:/var/www/html/wp-content/themes'
     environment: 
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: wp_index_shop
