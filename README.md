@@ -16,7 +16,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/CharleyKevin/index-academy.git>
+$ git clone https://github.com/CharleyKevin/index-academy.git
 
 ```
 
@@ -35,12 +35,12 @@ phpmyadmin: ['12000:80']
 
 ### 📚 Acessar Index Academy
 ```bash
-# Acesse o wordpress <http://localhost>
+# Acesse o wordpress http://localhost
 ```
 
 ### 🌍 Acessar painel admin do Wordpress
 ```bash
-# Acesse o wordpress <http://localhost/wp-login.php>
+# Acesse o wordpress http://localhost/wp-login.php
 
 login: index-shop-admin
 senha: Wb&DPvRYTEzTVbk@Am
@@ -48,7 +48,7 @@ senha: Wb&DPvRYTEzTVbk@Am
 
 ### ➕ Cadastre novos cursos no menu Posts
 ```bash
-# Acesse o wordpress <http://localhost/wp-admin/post-new.php>
+# Acesse o wordpress http://localhost/wp-admin/post-new.php
 ```
 
 ### 🛠 Tecnologias
